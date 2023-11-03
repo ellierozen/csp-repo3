@@ -5,9 +5,9 @@ layout: post
 title: Algorithm Tech Talk Reflections
 description: Team Teach Reflection
 type: hacks
-courses: { compsci: {week: 8} }
+courses: { compsci: {week: 7} }
 ---
-
+### PBL Unit 1 / Week 7
 -  Algorithms are step-by-step procedures or sets of rules used to solve problems or perform tasks
     - Also known as sequencing
         - Step 1, Step 2, Step 3...(in order)
