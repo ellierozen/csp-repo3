@@ -3,7 +3,6 @@ toc: true
 comments: true
 layout: post
 title: Signup Page demographics
-description: Team teach about SASS Javascript login and signup page
 courses: { compsci: {week: 20} }
 type: hacks
 ---
