@@ -91,11 +91,21 @@ type: hacks
   <link rel="stylesheet" href="styles.css"> <!-- Include the compiled CSS file -->
 </head>
 
+
+
+
+
+
+
+
 <body>
     <div class="container">
     <form action="javascript:signUp_user()">
+     <p><label for="Name"></label>
+     <input type="box" />
+    </p>
     <p><label for="Name">First Name:</label>
-     <input type="text" id="name" placeholder="Your First Name" />
+     <input type="text" id="name" placeholder="Your first Name" />
     </p>
     <p><label for="uid">User ID:</label> 
     <input type="text" id="uid" placeholder="User ID" />

@@ -56,7 +56,7 @@ type: hacks
           .then(response => {
             if (response.ok) {
                 console.log("User logged in successfully");
-                window.location.href = "https://drishyamody.github.io/Frontend/weather"
+                window.location.href = "https://www.amazon.com/"
               } else {
                 console.error("User login failed");
                 // You can handle failed login attempts here
