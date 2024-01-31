@@ -95,7 +95,7 @@ type: hacks
     </p>
     <p>
      <button class="button-spacing">Log In</button>
-          <button onClick = "window.location.href ='https://ellierozen.github.io/csp3-repo//2023/01/21/signuppage.html'" class="button-spacing" >Sign Up</button>
+          <button onClick = "window.location.href ='https://ellierozen.github.io/csp3-repo//2024/01/21/signuppage.html'" class="button-spacing" >Sign Up</button>
 
       
     </p>
