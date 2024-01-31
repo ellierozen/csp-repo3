@@ -52,7 +52,7 @@ type: hacks
           redirect: 'follow'
         };
 
-      fetch("http://localhost:8086/api/users/authenticate", requestOptions)
+      fetch("http://127.0.0.1:8086/api/users/authenticate", requestOptions)
           .then(response => {
             if (response.ok) {
                 console.log("User logged in successfully");
@@ -87,6 +87,9 @@ type: hacks
   <!-- Your HTML login form -->
   <div id="errorMessage"></div>
   <form action="javascript:login_user()">
+  <p><label for="Name"></label>
+     <input type="box" />
+    </p>
     <p><label for="uid">User ID:</label>
       <input type="text" name="uid" id="uid" required>
     </p>
