@@ -14,7 +14,6 @@ type: hacks
 <head>
 <script>
     //import { uri, options } from '{{site.baseurl}}/assets/js/api/config.js';
-
     function login_user() {
       const enteredUid = document.getElementById("uid").value;
       const enteredPassword = document.getElementById("password").value;
@@ -31,15 +30,12 @@ type: hacks
         
       }
     
-
     function login_api(uid, pw){
       var myHeaders = new Headers();
       myHeaders.append("Accept", "*/*");
       myHeaders.append("Accept-Language", "en-US,en;q=0.9");
       myHeaders.append("Content-Type", "application/json");
       myHeaders.append("Cookie", "jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfdWlkIjoidG9ueSJ9.jEShka0oXI1-uCuSTfo3ed5WRw3ASLNV0Tpn1kc5GB0");
-
-
       var raw = JSON.stringify({
           "uid": uid,
           "password": pw
@@ -56,7 +52,7 @@ type: hacks
           .then(response => {
             if (response.ok) {
                 console.log("User logged in successfully");
-                window.location.href = "https://www.amazon.com/"
+                window.location.href = "http://127.0.0.1:4200/csp3-repo//2024/02/06/parentpagesqldatabase.html"
               } else {
                 console.error("User login failed");
                 // You can handle failed login attempts here
