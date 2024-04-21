@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swim Predictor</title>
+</head>
+<body>
+    <h1>Swim Predictor</h1>
+    <form id="swim-form">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="experience">Experience:</label>
+        <select id="experience" name="experience" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" required><br><br>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" name="height" required><br><br>
+
+        <button onclick="predictFast()">Predict</button>
+    </form>
+
+    <div id="prediction-result"></div>
+
+    <script>
+      function predictFast() {
+            const age = document.getElementById('age').value;
+            const experience = document.getElementById('experience').value;
+            const weight = document.getElementById('weight').value;
+            const height = document.getElementById('height').value;
+            
+            const data = {
+                age,
+                experience,
+                weight,
+                height,
+            
+            };
+
+            fetch('http://127.0.0.1:8022/api/swim/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(prediction => {
+                document.getElementById('prediction').innerText = `Speed predicition: ${prediction.message*100}%`;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>
